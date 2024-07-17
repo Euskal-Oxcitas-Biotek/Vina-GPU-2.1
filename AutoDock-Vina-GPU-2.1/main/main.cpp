@@ -330,7 +330,7 @@ void main_procedure(std::vector<model>& ms, const boost::optional<model>& ref, /
 	}
 
 	par.mc.min_rmsd = min_rmsd;
-	par.mc.num_saved_mins = 20;
+	par.mc.num_saved_mins = num_modes;
 	par.mc.hunt_cap = vec(10, 10, 10);
 	par.num_tasks = exhaustiveness;
 	par.num_threads = cpu;
