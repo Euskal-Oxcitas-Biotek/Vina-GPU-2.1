@@ -543,7 +543,7 @@ Thank you!\n";
 		std::string rigid_name, ligand_name, flex_name, config_name, out_name, log_name;
 		fl center_x = -8.654, center_y = 2.229, center_z = 19.715, size_x = 24.0, size_y = 26.25, size_z = 22.5;
 		int cpu = 1, seed, exhaustiveness = 1, verbosity = 2, num_modes = 9;
-		fl min_rmsd = 2.0; energy_range = 3.0;
+		fl min_rmsd = 2.0, energy_range = 3.0;
 		int search_depth = 0;
 		int thread = 8000;
 		std::string ligand_directory, output_directory, opencl_binary_path;
