@@ -383,8 +383,9 @@ void main_procedure(std::vector<model>& ms, const boost::optional<model>& ref, /
 			continue;
 		}
 
-		const fl out_min_rmsd = 1;
-		out_cont = remove_redundant(out_cont, out_min_rmsd);
+		// Force the output of all the results obtained by the tool
+		//const fl out_min_rmsd = 1;
+		//out_cont = remove_redundant(out_cont, out_min_rmsd);
 
 		done(verbosity, log);
 
