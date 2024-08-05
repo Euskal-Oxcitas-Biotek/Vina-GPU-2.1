@@ -543,7 +543,7 @@ Thank you!\n";
 		std::string rigid_name, ligand_name, flex_name, config_name, out_name, log_name;
 		fl center_x = -8.654, center_y = 2.229, center_z = 19.715, size_x = 24.0, size_y = 26.25, size_z = 22.5;
 		int cpu = 1, seed, exhaustiveness = 1, verbosity = 2, num_modes = 9;
-		fl min_rmsd = 2.0, energy_range = 2.0;
+		fl min_rmsd = 2.0, energy_range = 3.0;
 		int search_depth = 0;
 		int thread = 8000;
 		std::string ligand_directory, output_directory, opencl_binary_path;
@@ -609,7 +609,7 @@ Thank you!\n";
 			//("exhaustiveness", value<int>(&exhaustiveness)->default_value(1), "exhaustiveness of the global search (roughly proportional to time): 1+")
 			("min_rmsd", value<fl>(&min_rmsd)->default_value(2.0), "minimum RMSD between output poses")
 			("num_modes", value<int>(&num_modes)->default_value(9), "maximum number of binding modes to generate")
-			("energy_range", value<fl>(&energy_range)->default_value(2.0), "maximum energy difference between the best binding mode and the worst one displayed (kcal/mol)")
+			("energy_range", value<fl>(&energy_range)->default_value(3.0), "maximum energy difference between the best binding mode and the worst one displayed (kcal/mol)")
 			;
 		options_description config("Configuration file (optional)");
 		config.add_options()
