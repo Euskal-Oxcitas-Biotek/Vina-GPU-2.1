@@ -383,9 +383,6 @@ void main_procedure(std::vector<model>& ms, const boost::optional<model>& ref, /
 			continue;
 		}
 
-		// Sort outputs
-		out_cont.sort();
-
 		done(verbosity, log);
 
 		log.setf(std::ios::fixed, std::ios::floatfield);
