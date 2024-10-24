@@ -383,9 +383,8 @@ void main_procedure(std::vector<model>& ms, const boost::optional<model>& ref, /
 			continue;
 		}
 
-		// Force the output of all the results obtained by the tool
-		//const fl out_min_rmsd = 1;
-		//out_cont = remove_redundant(out_cont, out_min_rmsd);
+		// Sort outputs
+		out_cont.sort();
 
 		done(verbosity, log);
 
@@ -795,8 +794,6 @@ Thank you!\n";
 			cpu = 1;
 		if (verbosity > 1 && exhaustiveness < cpu)
 			log << "WARNING: at low exhaustiveness, it may be impossible to utilize all CPUs\n";
-
-		
 
 		std::vector<std::vector<std::string>> ligand_names;
 		std::vector<std::string> out_names;
